@@ -1,0 +1,53 @@
+MemoGPT/
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts          ✅ OpenAI streaming endpoint
+│   ├── login/
+│   │   └── page.tsx              ✅ Glassmorphism login
+│   ├── signup/
+│   │   └── page.tsx              ✅ Sign up + email confirm
+│   ├── globals.css               ✅ Global styles, dark mode, markdown
+│   ├── layout.tsx                ✅ Root layout, ThemeProvider, SEO
+│   └── page.tsx                  ✅ Dashboard server page (auth guard)
+│
+├── components/
+│   ├── chat/
+│   │   ├── ChatWindow.tsx        ✅ Streaming chat, auto-title, welcome
+│   │   ├── MessageBubble.tsx     ✅ Markdown render, copy, Send-to-Notes
+│   │   ├── ChatInput.tsx         ✅ Auto-resize, suggestions, stop btn
+│   │   └── SendToNotesDropdown.tsx ✅ Block picker, save confirmation
+│   ├── layout/
+│   │   ├── Sidebar.tsx           ✅ Glassmorphism, history, notes, collapse
+│   │   └── DashboardClient.tsx   ✅ Chat/Notes/Split view switcher
+│   ├── notes/
+│   │   └── NoteBlockEditor.tsx   ✅ MD editor, preview, PDF/MD export
+│   ├── search/
+│   │   └── GlobalSearch.tsx      ✅ Cmd+K, Fuse.js, keyboard nav
+│   └── ui/
+│       ├── ThemeToggle.tsx        ✅ Dark/Light/System toggle
+│       └── Modal.tsx              ✅ Animated modal
+│
+├── lib/
+│   ├── supabase/
+│   │   ├── client.ts             ✅ Browser Supabase client
+│   │   └── server.ts             ✅ Server Supabase client
+│   ├── openai.ts                 ✅ OpenAI client config
+│   ├── store.ts                  ✅ Zustand global store
+│   └── utils/
+│       └── helpers.ts            ✅ cn, formatDate, truncate
+│
+├── types/
+│   └── index.ts                  ✅ All TypeScript interfaces
+│
+├── supabase/
+│   └── schema.sql                ✅ Full DB schema + RLS
+│
+├── .env.local                    ✅ Environment variables (fill in!)
+├── .env.example                  ✅ Template
+├── middleware.ts                  ✅ Auth route protection
+├── next.config.js                ✅
+├── tailwind.config.ts            ✅
+├── postcss.config.js             ✅
+├── tsconfig.json                 ✅
+└── package.json                  ✅
